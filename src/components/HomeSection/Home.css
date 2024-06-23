@@ -1,0 +1,191 @@
+/* B) HOME SECTION */
+/* B1) Home */
+.home {
+  position: relative;
+  width: 100%;
+  /*  */
+  height: 100vh; 
+  overflow: hidden;
+}
+  
+.home .hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /*  */
+  height: 100%;
+  z-index: 0;
+}
+  
+.home .hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+  
+.hero {
+  width: 70%;
+  position: relative;
+  margin: 18vh auto;
+  color: var(--font-color-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+}  
+  
+.hero h1{
+  font-size: 5rem;
+  line-height: 5rem;
+  text-shadow: 2px 2px var(--font-color-3);
+}
+  
+.hero p {
+  background-color: var(--bg-color-6);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding: 0 10px 0 10px;
+}
+  
+.hero button {
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  
+}
+  
+.hero-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+  
+.hero .button-1 {
+  color: var(--font-color-1);
+  font-size: 1.2rem;
+  background-color: var(--bg-color-3);
+  border-color: var(--bg-color-3);
+  border-style: none;
+  text-shadow: 1.5px 1.5px var(--font-color-3);
+}
+  
+.hero .button-2 {
+  color: var(--font-color-1);
+  font-size: 1.4rem;
+  background-color: var(--bg-color-3);
+  border-color: var(--bg-color-3);
+  border-style: none;
+}
+  
+.hero .button-3 {
+  color: var(--font-color-1);
+  font-size: 1.4rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--border-color-1);
+  margin-left: 1.5rem;
+}
+  
+/* B2) Home boxes */
+.home-boxes {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--bg-color-4);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 0;
+}
+  
+.home-boxes .box {
+  background-color: var(--bg-color-1);
+  width: 16%;
+  height: 16vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+}
+  
+.home-boxes .box h4 {
+  color: var(--font-color-2);
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+  
+.home-boxes .box p {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+
+/* RESPONSIVE DESIGN FOR 576PX SCREEN */
+@media screen and (max-width: 576px) {
+    /* B) HOME SECTION */
+  /* B1) Home */
+  .home .hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180%;
+    /* z-index: -5; */
+  }
+  
+  .home .hero-img img {
+    object-fit: cover;
+  }
+
+  .hero {
+    margin: 10vh auto auto auto;
+  }
+
+  .hero h1{
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-btn {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0.2rem;
+    border-radius: 3px;
+    
+  }
+
+  .hero .button-3 {
+    margin: 0.5rem 0 0.5rem 0;
+  }
+
+  .hero .button-1 {
+    font-size: 1rem;
+  }
+
+  .hero .button-2,
+  .hero .button-3 {
+    font-size: 1.2rem;
+  }
+
+  /* B2) Home boxes */
+  .home-boxes {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .home-boxes .box {
+    width: 30%;
+    height: 10vh;
+  }
+}

@@ -1,0 +1,134 @@
+/* E) REVIEW SECTION*/
+.review {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 0;
+  }
+  
+  .bg-color-review {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color-4);
+    z-index: -100;
+  }
+  
+  /* .review-start */
+  .review-start {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .review-start h2 {
+    font-size: 1.6rem;
+    color: var(--font-color-2);
+    margin: 4vh 0 1vh 0;
+  }
+  
+  .review-start p {
+    margin: 24px 0;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .review-start hr {
+    border: 3px solid var(--bg-color-2);
+    border-radius: 5px;
+    width: 50px;
+  }
+  
+  /* .review-content */
+  .review-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5%;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  .review-1, 
+  .review-2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    width: 25%;
+    margin: 1.2rem;
+    padding: 1.2rem 0;
+  }
+  /* .review-content .profil */
+  .profil {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  
+  .profil img {
+    width: 10%;
+    border-radius: 50%;
+  }
+  
+  .info {
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 0.5rem;
+  }
+  
+  .info h4{
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* .review-content .profil-text */
+  .profil-text {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--bg-color-3);
+    padding: 1rem;
+    color: var(--bg-color-1);
+    font-size: 1.2rem;
+  }
+  
+  .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 125%;
+    background-color: var(--bg-color-3);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 95% 100%, 95% 80%, 5% 80%, 5% 100%, 0 80%);
+    opacity: 0.5;
+    z-index: -1;
+  }
+
+
+  /* RESPONSIVE DESIGN FOR 576PX SCREEN */
+@media screen and (max-width: 576px) {
+  /* E) REVIEW SECTION*/
+  .review-content {
+    width: 80%;
+    flex-direction: column;
+  }
+
+  .review-1, .review-2 {
+    width: 100%;
+    margin: 0;
+  }
+}

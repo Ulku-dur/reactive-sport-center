@@ -1,0 +1,43 @@
+/* GENERAL STYLES & ROOT */
+:root {
+  /* font colors */
+  --font-color-1: white;
+  --font-color-2: #355592;
+  --font-color-3: black;
+  /* background colors */
+  --bg-color-1: white;
+  --bg-color-2: #ec9b00;
+  --bg-color-3: #355592;
+  --bg-color-4: #f2f8ff;
+  --bg-color-5: #f6f6f6;
+  --bg-color-6: rgb(0, 0, 0, 0.7);
+  /* border colors */
+  --border-color-1: white;
+  --border-color-2: black;
+  --border-color-3: #ec9b00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: var(--bg-color-1);
+  color: var(--font-color-3);
+}
+
+html {
+  overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+
+

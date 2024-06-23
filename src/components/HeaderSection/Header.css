@@ -1,0 +1,88 @@
+/* A) HEADER SECTION */
+.header {
+  width: 100vw;
+  height: 3vh;
+  padding: 1rem 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  background-color: transparent;
+  font-size: 1.2rem;
+}
+  
+.navbar-web {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+  
+.navbar-web a {
+  text-decoration: none;
+  color: var(--font-color-1);
+  /* padding: 5px; */
+  font-weight: bold;
+}
+  
+.navbar-web .join {
+  background-color: var(--bg-color-2);
+  border-radius: 5px;
+  width: 4rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.header img {
+  height: 8vh;
+}
+  
+/* hmbrgr menu */
+.menu-btn,
+.menu-icon {
+  display: none;
+}
+
+/* RESPONSIVE DESIGN FOR 576PX SCREEN */
+@media screen and (max-width: 576px) {
+  /* A) HEADER SECTION */
+  .header {
+    height: 4vh;
+    justify-content: space-between;
+  }
+
+  .header img {
+    height: 15vh;
+    padding: 0 0 0 1rem;
+  }
+  
+  .navbar-web {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: start;
+    position: absolute;
+    padding: 1rem 0 1rem 1rem;
+    top: 9vh;
+    right: -100%;
+    background-color: var(--bg-color-3);
+    gap: 0.6rem;
+    transition: right 0.5s ease;
+  }
+
+  .menu-btn:checked ~ .navbar-web {
+    right: 0;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 3rem;
+    color: var(--font-color-1);
+    cursor: pointer;
+    padding: 1rem 1rem 0 0;
+  }
+}
